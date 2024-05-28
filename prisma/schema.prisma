@@ -1,0 +1,49 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int   @id @default(autoincrement())
+  name     String
+  email    String @unique
+  password String
+  role     Role   
+  Lecture  Lecture[] @relation("InstructorLectures")
+  
+}
+
+model Course{
+  id        Int  @id @default(autoincrement())
+  name      String
+  level     String
+  description String
+  image    String
+  createdAt DateTime @default(now())
+  lectures  Lecture[]
+  
+}
+
+
+model Lecture{
+  id        Int  @id @default(autoincrement())
+  date      DateTime 
+  instructor User  @relation("InstructorLectures", fields: [instructorId], references: [id])
+  instructorId Int 
+  course     Course @relation(fields: [courseId], references: [id])
+  courseId   Int
+
+   @@unique([date, instructorId]) // Ensures no date conflicts for the same instructor
+}
+
+enum Role{
+  ADMIN
+  INSTRUCTOR
+  STUDENT
+}
