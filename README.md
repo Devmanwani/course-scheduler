@@ -30,4 +30,8 @@ This repository hosts the Course Scheduler web application.
 
 ### Run locally
  - You can run this repository locally by clonning the repo and then 
- - run npm run dev 
+ - run npm run dev
+
+## Video Demonstration
+
+For a detailed video demonstration of the application, check out this [YouTube video](https://www.youtube.com/watch?v=5iBPlG1kYOE)
