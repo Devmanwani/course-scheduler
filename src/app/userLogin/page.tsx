@@ -33,7 +33,7 @@ export default function UserLogin() {
             const jwt =  response.data.token;
            
             localStorage.setItem("token", `Bearer ${jwt}`);
-            router.push("/admin/getInstructors");
+            router.push("/getLectureDetails");
           } else {
             throw new Error("Unexpected response status: " + response.status);
             
