@@ -1,11 +1,6 @@
 # Course Scheduler App
 
-This repository hosts the Course Scheduler web application.
 
-## Access URLs
-
-- User Login: [User Login](https://course-scheduler-bjrr.vercel.app/userLogin)
-- Admin Login: [Admin Login](https://course-scheduler-bjrr.vercel.app/adminLogin)
 
 ## Credentials
 
@@ -21,12 +16,13 @@ This repository hosts the Course Scheduler web application.
 
 ### Admin Features
 
-- Add Courses: [Admin Add Course](https://course-scheduler-bjrr.vercel.app/admin)
-- View Instructors: [Admin View Instructors](https://course-scheduler-bjrr.vercel.app/admin/getInstructors)
+- Add Courses: 
+- View Instructors:
+-
+- ### User Features
 
-### User Features
-
-- User Login: [User Login](https://course-scheduler-bjrr.vercel.app/userLogin)
+- User Login:
+- view lectures
 
 ### Run locally
  - You can run this repository locally by clonning the repo and then 
@@ -34,4 +30,4 @@ This repository hosts the Course Scheduler web application.
 
 ## Video Demonstration
 
-For a detailed video demonstration of the application, check out this [YouTube video](https://www.youtube.com/watch?v=5iBPlG1kYOE)
+For a detailed video demonstration of the application, check out this [video](https://drive.google.com/file/d/12ZtyYOqY0eui2AWL7_aGUE1py12qWCrX/view)
